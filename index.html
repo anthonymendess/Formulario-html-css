@@ -1,0 +1,134 @@
+<html>
+    <head>
+  <title>Formulario Contato</title>
+    </head>
+    <style>
+       *{margin: 0;padding: 0; box-sizing: border-box;}
+       body{
+           background-color: #4b3e4d;
+       }
+       form{
+           background-color: black;
+           max-width: 500px; 
+           width: 70%;
+           padding: 20px;
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%);
+           border-radius: 10px;
+       }
+       form h3{
+           top: 90vh;
+           text-align: center;
+           color: lightgray;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+       }
+       form input[type=text],
+       form input[type=password]{
+           width: 100%;
+           height: 40px;
+           border: 1px solid #ccc;
+           padding-left: 10px;
+           margin: 10px 0;
+       }
+       form input[type=submit]{
+           width: 100%;
+           height: 38px;
+           cursor: pointer;
+           font-size: 17px;
+           color: 	#1C1C1C; 
+           
+           font-weight: bold;
+           border-color: lightgoldenrodyellow;
+           background-color:lightgray ;
+          
+           border-radius: 20px;
+           margin-top: 10px;
+           }
+           form input[type=submit]:hover{
+               background-color: rgb(240,255,255,0.7);
+
+           }
+        .icones .face img{
+            position: absolute;
+            width: 35px;
+            left: 661px;
+            top: 490px; 
+            cursor: pointer;
+        }
+        .icones .face img:hover{
+            background-color: rgba(65, 105, 225, 1.1);
+            border-radius: 9px;
+        }
+       
+        .icones .instagram img{
+            position: absolute;
+            width: 35px;
+            left: 750px;
+            top: 490px; 
+            cursor: pointer;
+        }
+        .icones .instagram img:hover{
+            background-color: black;
+            border-radius: 10px;
+        }
+        .icones .google img{
+            position: absolute;
+            width: 35px;
+            left: 570px;
+            top: 490px; 
+            cursor: pointer;
+            border-radius: 25px;
+        }
+        .icones .google img:hover{
+            background-color: rgba(255,0,0, 0.9);
+            border-radius: 13px;
+        }
+        
+        @media  screen and (max-width: 960px) {
+            
+         .icones .face img{
+             top: 469px;
+             left: 228px;
+         }
+         .icones .google img{
+            top: 469px;
+             left: 150px;
+         }
+         .icones .instagram img{
+            top: 469px;
+            left: 307px;
+         }
+
+            
+        }
+    </style>
+    <body>
+        <div>
+            
+        </div>
+        <div class="icones">
+            <figure class="face">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="facebook">
+        </figure>
+         <figure class="instagram" >
+             <img src="img/ig.png" alt="instagram">
+         </figure>
+         <figure class="google" >
+            <img src="https://cdn-icons-png.flaticon.com/128/179/179326.png" alt="google">
+        </figure>
+       
+        </div>
+        <form>
+            <h3>Entrar em Contato</h3>
+            <input type="text" name= "email" placeholder="seu e-mail.." />
+            <input type="password" name="senha" placeholder="sua senha..."/>
+            <input type="submit" name="ação" placeholder="Enviar" />
+        </form>
+
+    </body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
